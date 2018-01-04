@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev ant
 RUN apt-get install -y python python-pip
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m textblob.download_corpora
 
 COPY . .
 

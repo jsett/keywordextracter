@@ -14,8 +14,7 @@ artificial intelligence run rampant.
 '''
 
 blob = TextBlob(text)
-print blob.tags           # [('The', 'DT'), ('titular', 'JJ'),
-                    #  ('threat', 'NN'), ('of', 'IN'), ...]
+#print blob.tags
 
 print blob.noun_phrases
 
